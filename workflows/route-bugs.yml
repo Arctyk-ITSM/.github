@@ -1,0 +1,20 @@
+name: Route bugs
+on:
+  issues:
+    types: [opened, reopened]
+jobs:
+  label-and-add:
+    if: contains(github.event.issue.title, '[BUG]') || contains(join(github.event.issue.labels.*.name, ','), 'bug')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add triage label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: "triage"
+
+      - name: Add to org project
+        uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: https://github.com/orgs/Arctyk-ITSM/projects/1
+          github-token: ${{ secrets.GITHUB_TOKEN }}
