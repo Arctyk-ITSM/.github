@@ -1,0 +1,52 @@
+name: "Bug report"
+description: "Report a reproducible problem"
+title: "[BUG] <short summary>"
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you expected vs what happened.
+      placeholder: |
+        Expected: ...
+        Actual: ...
+    validations: { required: true }
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+        4.
+    validations: { required: true }
+
+  - type: input
+    id: version
+    attributes:
+      label: App version / commit SHA
+      description: e.g., v0.2.1 or 3b8ac12
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options: ["S1 - Critical", "S2 - High", "S3 - Medium", "S4 - Low"]
+      default: 2
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS/Browser/DB/Python/Django
+      placeholder: "Windows 11, PostgreSQL 17, Python 3.12, Django 5.x"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Redact secrets before sharing.
