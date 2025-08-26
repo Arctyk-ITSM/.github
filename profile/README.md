@@ -3,14 +3,12 @@
 **Modern, modular, and open-source IT Service Management platform.**  
 Arctyk ITSM is designed for IT departments of all sizes, providing a flexible and scalable help desk and asset management solution.
 
----
 
 ## 🌟 What is Arctyk ITSM?
 
 Arctyk ITSM is a **Django-based ITSM platform** that combines the power of open-source software with enterprise-grade best practices.  
 Our goal is to provide IT teams with the same level of functionality offered by commercial tools like **Zendesk** and **Jira Service Management**, while keeping it **transparent, customizable, and community-driven**.
 
----
 
 ## ✨ Features
 
