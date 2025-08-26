@@ -16,5 +16,5 @@ jobs:
       - name: Add to org project
         uses: actions/add-to-project@v0.5.0
         with:
-          project-url: https://github.com/orgs/Arctyk-ITSM/projects/1
+          project-url: https://github.com/orgs/Arctyk-ITSM/projects/13
           github-token: ${{ secrets.GITHUB_TOKEN }}
