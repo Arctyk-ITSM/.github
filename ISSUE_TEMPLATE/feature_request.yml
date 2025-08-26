@@ -1,0 +1,30 @@
+name: "Feature request"
+description: "Propose an enhancement"
+title: "[FEAT] <short summary>"
+labels: ["feature", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use case
+      description: What user problem are we solving?
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Be specific; include UI/API notes if helpful.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: ["ticketing", "inventory", "changelog", "api", "ui", "docs", "ops"]
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] ...
+        - [ ] ...
